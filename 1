@@ -1,0 +1,9 @@
+<?php
+
+//additional information woocoomerce checkout
+
+add_action( 'woocommerce_after_order_notes', 'additional_notice_shipping' );
+
+function additional_notice_shipping() {
+echo '<p class="allow">add your text</p>';
+}
